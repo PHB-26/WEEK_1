@@ -4,57 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI_BOT | AI Study Assistant</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <div class="container">
 
-        <div class="header">
-            <h1>🤖 AI_BOT</h1>
-
-            <p class="subtitle">
-                Intelligent Study Assistant
-            </p>
+        <header class="header">
+            <h1>AI_BOT</h1>
+            <p class="subtitle">Your Intelligent Study Assistant</p>
 
             <p class="description">
-                Explain concepts, summarize notes, and generate quiz questions instantly using Generative AI.
+                Need help understanding a topic? Want quick summaries or quiz
+                questions for revision? Let AI_BOT help you learn faster.
             </p>
-        </div>
+        </header>
 
+        
         <div class="form-group">
-
-            <label for="feature">Choose a Feature</label>
+            <label for="feature">What would you like to do?</label>
 
             <select id="feature">
-                <option value="explain">
-                    📘 Explain a Concept
-                </option>
-
-                <option value="summarize">
-                    📝 Summarize Text
-                </option>
-
-                <option value="quiz">
-                    ❓ Generate Quiz Questions
-                </option>
+                <option value="explain">Explain a Concept</option>
+                <option value="summarize">Summarize Text</option>
+                <option value="quiz"> Generate Quiz Questions</option>
             </select>
-
         </div>
 
         <div class="form-group">
-
-            <label for="inputText">Enter Your Text</label>
+            <label for="inputText">Enter your notes or topic</label>
 
             <textarea
                 id="inputText"
-                placeholder="Paste your notes, topic, or study material here..."
+                placeholder="Example: Explain Object-Oriented Programming, summarize these notes, or create a quiz from this chapter..."
             ></textarea>
-
         </div>
 
         <button id="generateBtn">
@@ -63,21 +52,19 @@
 
         <div id="loading"></div>
 
-        <div class="output-section">
-
+        <!-- Output Area -->
+        <section class="output-section">
             <div class="output-header">
-                <h2>📄 Output</h2>
+                <h2>Output</h2>
             </div>
 
             <pre id="output">
 Your AI-generated response will appear here...
             </pre>
-
-        </div>
+        </section>
 
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
