@@ -29,31 +29,12 @@ Creates quiz questions based on the provided topic or content.
 * dotenv
 * cors
 
-## Installation
-
-1. Install dependencies:
-
-```bash
-npm install
-```
-
-2. Create a `.env` file:
+## Usage of env for protecting the API key
 
 ```env
 GEMINI_API_KEY=YOUR_API_KEY_HERE
 ```
-
-3. Start the application:
-
-```bash
-node server.js
-```
-
-4. Open:
-
-```text
-http://localhost:3000
-```
+`
 
 ## How It Works
 
@@ -95,14 +76,5 @@ WEEK-1/
 ├── package.json
 
 └── README.md
-
-## Future Enhancements
-
-* Chat history
-* Loading animation
-* Markdown rendering
-* Additional AI study tools
-
-## Author
-
-Created as part of the Summer Bootcamp Week-1 Assignment.
+## Author 
+Priyahasini Bezawada
